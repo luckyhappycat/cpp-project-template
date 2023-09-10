@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cpp-project-template"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "cpp-project-template"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pre-commit = "^3.4.0"
+clang-format = "^16.0.6"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
